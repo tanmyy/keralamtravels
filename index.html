@@ -3,14 +3,22 @@
 
 <head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>keralamtravels.in</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 height:100vh;
 display:flex;
 justify-content:center;
@@ -21,6 +29,8 @@ text-align:center;
 position:relative;
 overflow:hidden;
 }
+
+/* Background Image */
 
 body::before{
 content:"";
@@ -34,6 +44,8 @@ opacity:0.7;
 z-index:-2;
 }
 
+/* Dark overlay */
+
 body::after{
 content:"";
 position:fixed;
@@ -46,24 +58,34 @@ opacity:0.45;
 z-index:-1;
 }
 
+/* Card container */
+
 .container{
-background:#1e293b;
+background:rgba(30,41,59,0.85);
 padding:60px 80px;
 border-radius:14px;
 box-shadow:0 25px 60px rgba(0,0,0,0.5);
+max-width:500px;
+width:90%;
 }
+
+/* Domain title */
 
 h1{
 font-size:42px;
-margin-bottom:10px;
+margin-bottom:12px;
 letter-spacing:1px;
 }
 
+/* Subtitle */
+
 .subtitle{
-color:#94a3b8;
+color:#cbd5f5;
 font-size:18px;
 margin-bottom:30px;
 }
+
+/* Button */
 
 .emailbtn{
 display:inline-block;
@@ -74,17 +96,20 @@ color:#0f172a;
 text-decoration:none;
 font-weight:600;
 border-radius:8px;
-transition:0.2s;
+transition:0.25s;
 }
 
 .emailbtn:hover{
 background:#0ea5e9;
+transform:translateY(-2px);
 }
+
+/* Email note */
 
 .note{
 margin-top:20px;
 font-size:14px;
-color:#94a3b8;
+color:#cbd5f5;
 }
 
 .note a{
@@ -94,6 +119,33 @@ text-decoration:none;
 
 .note a:hover{
 text-decoration:underline;
+}
+
+/* MOBILE VERSION */
+
+@media (max-width:768px){
+
+.container{
+padding:35px 25px;
+}
+
+h1{
+font-size:28px;
+}
+
+.subtitle{
+font-size:16px;
+}
+
+.emailbtn{
+padding:12px 22px;
+font-size:14px;
+}
+
+.note{
+font-size:13px;
+}
+
 }
 
 </style>
