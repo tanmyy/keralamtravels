@@ -70,6 +70,7 @@ header.site{
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
 .brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-family:'Fraunces',serif;font-weight:600;font-size:1.25rem;color:var(--teal)}
 .brand svg{width:30px;height:30px}
+.brand img{width:30px;height:30px;border-radius:8px}
 .nav-links{display:none;gap:26px;font-weight:600;font-size:.94rem}
 .nav-links a{text-decoration:none;color:var(--ink)}
 .nav-links a:hover{color:var(--teal)}
