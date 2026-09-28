@@ -1,189 +1,282 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-69N0CRSPQ9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-69N0CRSPQ9');
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerala Trip Budget Planner, Free & Instant | Keralam Travels</title>
+<meta name="description" content="Plan a Kerala trip with real numbers. Free Trip Budget Planner covers stay, food, local travel, and activities across Munnar, Alleppey, Kochi, and more. No signup.">
+<link rel="canonical" href="https://keralamtravels.in/index.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kerala Trip Budget Planner, Free & Instant | Keralam Travels">
+<meta property="og:description" content="Plan a Kerala trip with real numbers. Free Trip Budget Planner covers stay, food, local travel, and activities across Munnar, Alleppey, Kochi, and more. No signup.">
+<meta property="og:url" content="https://keralamtravels.in/index.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1563279036-8ae92c62ca4f?w=1600&q=80&auto=format&fit=crop">
+<meta property="og:site_name" content="Keralam Travels">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+{"@type":"Question","name":"Is the Trip Budget Planner actually free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no signup, no email gate, and no cap on how many plans you build. We keep it free because some visitors book through our partner links, and that covers the cost of running the site."}},
+{"@type":"Question","name":"How accurate are the numbers?","acceptedAnswer":{"@type":"Answer","text":"The base rates (Budget &#8377;2,500, Comfort &#8377;5,500, Luxury &#8377;12,000 per person per day) are built from listed prices on hotel and houseboat booking sites, checked every few months. Your actual trip can run 10-20% higher or lower depending on which hotels you pick and how far in advance you book."}},
+{"@type":"Question","name":"Why does December cost more than June?","acceptedAnswer":{"@type":"Answer","text":"December and January are Kerala's peak season: houseboats and beach-facing rooms in Alappuzha, Kumarakom, and Varkala routinely sell out weeks ahead, and prices follow demand. We apply a 1.25x multiplier for those two months. June to August is the monsoon, with fewer visitors and around 15% lower prices, though some houseboat routes reduce sailings in heavy rain."}},
+{"@type":"Question","name":"Do I need to book everything before I arrive?","acceptedAnswer":{"@type":"Answer","text":"For December, January, and the Onam period (usually late August or early September), yes, especially houseboats and Munnar hotels. For the rest of the year you can book your first two nights and figure out the rest as you go, which is how most independent travelers in Kerala actually move."}},
+{"@type":"Question","name":"Does Keralam Travels book my trip for us?","acceptedAnswer":{"@type":"Answer","text":"No. We are a planning tool, not a travel agency. The planner gives you a realistic budget and a day-by-day shape; you book directly with hotels, houseboat operators, or a local agent of your choice. The booking links under each plan go to third-party sites."}},
+{"@type":"Question","name":"Why don't you show hotel names in the results?","acceptedAnswer":{"@type":"Answer","text":"Because the planner is a budget estimator, not a booking engine, and hotel prices change by the week. Showing named hotels with stale prices would be less honest than showing you the category-level math and pointing you to a live search."}}
+]
+}
 </script>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>keralamtravels.in</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-font-family:'Montserrat', sans-serif;
-color:white;
-text-align:center;
-position:relative;
-overflow:hidden;
-}
-
-/* Background Image */
-
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:url("GettyImages-110051777.webp") center/cover no-repeat;
-opacity:0.7;
-z-index:-2;
-}
-
-/* Dark overlay */
-
-body::after{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:#0f172a;
-opacity:0.45;
-z-index:-1;
-}
-
-/* Card container */
-
-.container{
-background:rgba(30,41,59,0.85);
-padding:60px 80px;
-border-radius:14px;
-box-shadow:0 25px 60px rgba(0,0,0,0.5);
-max-width:500px;
-width:90%;
-}
-
-/* Domain title */
-
-h1{
-font-size:42px;
-margin-bottom:12px;
-letter-spacing:1px;
-}
-
-/* Subtitle */
-
-.subtitle{
-color:#cbd5f5;
-font-size:18px;
-margin-bottom:30px;
-}
-
-/* Button */
-
-.emailbtn{
-display:inline-block;
-margin-top:10px;
-padding:14px 28px;
-background:#38bdf8;
-color:#0f172a;
-text-decoration:none;
-font-weight:600;
-border-radius:8px;
-transition:0.25s;
-}
-
-.emailbtn:hover{
-background:#0ea5e9;
-transform:translateY(-2px);
-}
-
-/* Email note */
-
-.note{
-margin-top:20px;
-font-size:14px;
-color:#cbd5f5;
-}
-
-.note a{
-color:#38bdf8;
-text-decoration:none;
-}
-
-.note a:hover{
-text-decoration:underline;
-}
-
-/* MOBILE VERSION */
-
-@media (max-width:768px){
-
-.container{
-padding:35px 25px;
-}
-
-h1{
-font-size:28px;
-}
-
-.subtitle{
-font-size:16px;
-}
-
-.emailbtn{
-padding:12px 22px;
-font-size:14px;
-}
-
-.note{
-font-size:13px;
-}
-
-}
-
-</style>
-
 </head>
-
 <body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/index.html"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 24c2 2 6 2 8 0 2 2 6 2 8 0 2 2 6 2 8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 22V7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 7L23 20H16" fill="#E8962E" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg> Keralam Travels</a>
+    <nav class="nav-links"><a href="/planner.html">Planner</a><a href="/itineraries/index.html">Itineraries</a><a href="/destinations/index.html">Destinations</a><a href="/blog/index.html">Blog</a><a href="/about.html">About</a></nav>
+    <a class="btn btn-amber btn-sm nav-cta" href="/planner.html">Build my plan</a>
+    <button class="nav-toggle" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="wrap mobile-menu"><a href="/planner.html">Planner</a><a href="/itineraries/index.html">Itineraries</a><a href="/destinations/index.html">Destinations</a><a href="/blog/index.html">Blog</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="btn btn-amber btn-block" href="/planner.html">Build my plan</a></div>
+</header>
 
-<div class="container">
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1563279036-8ae92c62ca4f?w=1600&q=80&auto=format&fit=crop')"></div>
+  <div class="hero-mal">&#3349;&#3384;&#3349;&#3379;&#3364;&#3349;&#3364;</div>
+  <div class="wrap hero-inner">
+    <div class="two-col">
+      <div>
+        <span class="eyebrow"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Free planner, built from live listing prices</span>
+        <h1>What a 5-day Kerala trip actually costs, before you book anything.</h1>
+        <p class="lede">Pick your destinations, days, and travel style. Get a day-by-day plan and a real cost breakdown in under a minute, no email required.</p>
+        <div class="hero-actions">
+          <a class="btn btn-amber" href="/planner.html">Open the full planner</a>
+          <a class="btn btn-outline" style="border-color:#fff;color:#fff" href="#how-it-works">How it works</a>
+        </div>
+      </div>
+      <div>
+        <div class="planner-box" data-planner>
+  <div class="field">
+    <label>Where to (pick one or more)</label>
+    <div class="chip-row"><button type="button" class="chip active" data-dest-chip="munnar">Munnar</button><button type="button" class="chip active" data-dest-chip="alleppey">Alleppey</button><button type="button" class="chip" data-dest-chip="kochi">Kochi</button><button type="button" class="chip" data-dest-chip="kumarakom">Kumarakom</button><button type="button" class="chip" data-dest-chip="thekkady">Thekkady</button><button type="button" class="chip" data-dest-chip="wayanad">Wayanad</button><button type="button" class="chip" data-dest-chip="varkala">Varkala</button><button type="button" class="chip" data-dest-chip="kovalam">Kovalam</button></div>
+  </div>
+  <div class="field">
+    <label>Trip length: <span class="slider-value" data-days-value>5</span> days</label>
+    <input type="range" min="3" max="14" value="5" data-days-slider>
+  </div>
+  <div class="field">
+    <label>Travelers</label>
+    <div class="stepper">
+      <button type="button" data-traveler-minus aria-label="Fewer travelers">&minus;</button>
+      <span data-traveler-value>2</span>
+      <button type="button" data-traveler-plus aria-label="More travelers">+</button>
+    </div>
+  </div>
+  <div class="field">
+    <label>Travel style</label>
+    <div class="style-cards">
+      <div class="style-card" data-style-card="budget"><div class="price">&#8377;2,500/day</div><h4>Budget</h4><p>Homestays, local buses, thali meals.</p></div>
+      <div class="style-card active" data-style-card="comfort"><div class="price">&#8377;5,500/day</div><h4>Comfort</h4><p>3-star hotels, private cabs, mixed dining.</p></div>
+      <div class="style-card" data-style-card="luxury"><div class="price">&#8377;12,000/day</div><h4>Luxury</h4><p>Premium resorts, private car, fine dining.</p></div>
+    </div>
+  </div>
+  <div class="field">
+    <label>Travel month</label>
+    <select data-month>
+      <option value="1">January</option><option value="2">February</option><option value="3">March</option>
+      <option value="4">April</option><option value="5">May</option><option value="6">June</option>
+      <option value="7">July</option><option value="8">August</option><option value="9">September</option>
+      <option value="10">October</option><option value="11">November</option><option value="12">December</option>
+    </select>
+  </div>
+  <div class="field">
+    <label>Add-ons</label>
+    <div class="addon-row"><label><span>Houseboat cruise</span></label><span class="switch"><input type="checkbox" data-addon="houseboat" checked><span class="track"></span></span></div>
+    <div class="addon-row"><label><span>Kathakali show</span></label><span class="switch"><input type="checkbox" data-addon="kathakali"><span class="track"></span></span></div>
+    <div class="addon-row"><label><span>Ayurvedic massage</span></label><span class="switch"><input type="checkbox" data-addon="massage"><span class="track"></span></span></div>
+    <div class="addon-row"><label><span>Airport cab</span></label><span class="switch"><input type="checkbox" data-addon="cab" checked><span class="track"></span></span></div>
+  </div>
+  <button type="button" class="btn btn-amber btn-block" data-build-plan>Build my plan</button>
 
-<h1>keralamtravels.in</h1>
+  <div data-plan-output hidden style="margin-top:26px;border-top:1px solid var(--border);padding-top:20px">
+    <p class="per-day-note" data-plan-summary></p>
+    <h3 style="font-size:1.05rem;font-family:'Plus Jakarta Sans';font-weight:800">Day-by-day plan</h3>
+    <div data-days></div>
+    <h3 style="font-size:1.05rem;font-family:'Plus Jakarta Sans';font-weight:800;margin-top:18px">Cost breakdown</h3>
+    <table class="cost-table"><thead><tr><th>Item</th><th>Amount</th></tr></thead><tbody data-cost-rows></tbody></table>
+    <div class="grand-total"><span>Grand total</span><span class="amt" data-grand-total></span></div>
+    <p class="per-day-note" data-per-day></p>
+    <p class="per-day-note" data-season-note style="margin-top:6px"></p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:16px">
+      <button type="button" class="btn btn-outline btn-sm" data-copy-plan>Copy plan</button>
+      <button type="button" class="btn btn-outline btn-sm" data-download-plan>Download as text</button>
+      <button type="button" class="btn btn-teal btn-sm" data-whatsapp-plan>Share on WhatsApp</button>
+    </div>
+    <div class="divider"></div>
+    <p style="font-weight:700;margin-bottom:8px">Where this plan runs on the ground</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <a class="btn btn-outline-amber btn-sm" href="https://www.booking.com/searchresults.html?ss=Kerala%2C+India" target="_blank" rel="noopener sponsored">Compare stay prices &#8594;</a>
+      <a class="btn btn-outline-amber btn-sm" href="https://www.booking.com/searchresults.html?ss=Alleppey+houseboat" target="_blank" rel="noopener sponsored">Compare houseboat prices &#8594;</a>
+    </div>
+    <p style="font-size:.78rem;color:var(--ink-soft);margin-top:10px">These are outbound search links to third-party booking sites, not our own inventory. We may earn a small commission if you book through them, at no extra cost to you.</p>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="subtitle">
-This premium domain is available for purchase
+<div class="trust">
+  <div class="wrap">
+    <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Free to use</span>
+    <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>No signup</span>
+    <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Built from verified data</span>
+  </div>
 </div>
 
-<a class="emailbtn" href="https://mail.google.com/mail/?view=cm&to=tanmaykataria12@gmail.com">
-Contact Owner
-</a>
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Popular itineraries</span>
+      <h2>Three ways travelers usually split a Kerala trip</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card itin-card">
+        <img src="https://images.unsplash.com/photo-1650884986695-d1e5cf90610f?w=1600&q=80&auto=format&fit=crop" alt="Tea plantations in Munnar" loading="lazy">
+        <div class="card-pad">
+          <div class="tag-row"><span class="badge-outline">6 days</span><span class="badge-outline">Hills + backwaters</span></div>
+          <h3>Munnar to Alleppey classic</h3>
+          <p style="color:var(--ink-soft);font-size:.92rem">Tea gardens for three days, then a houseboat night on the backwaters. The route most first-time visitors take.</p>
+          <div class="price-tag">from &#8377;16,500 pp</div>
+        </div>
+      </div>
+      <div class="card itin-card">
+        <img src="https://images.unsplash.com/photo-1709105134096-7f0ebf30a3b5?w=1600&q=80&auto=format&fit=crop" alt="Green hills of Wayanad" loading="lazy">
+        <div class="card-pad">
+          <div class="tag-row"><span class="badge-outline">5 days</span><span class="badge-outline">Wildlife + hikes</span></div>
+          <h3>Wayanad for trekkers</h3>
+          <p style="color:var(--ink-soft);font-size:.92rem">Chembra Peak, Edakkal Caves, and a dawn safari. Less crowded than Munnar, more driving between stops.</p>
+          <div class="price-tag">from &#8377;13,750 pp</div>
+        </div>
+      </div>
+      <div class="card itin-card">
+        <img src="https://images.unsplash.com/photo-1704287195405-6883b8f70487?w=1600&q=80&auto=format&fit=crop" alt="Fort Kochi beach at sunset" loading="lazy">
+        <div class="card-pad">
+          <div class="tag-row"><span class="badge-outline">4 days</span><span class="badge-outline">Culture + coast</span></div>
+          <h3>Kochi and Kovalam</h3>
+          <p style="color:var(--ink-soft);font-size:.92rem">Fort Kochi's colonial lanes and Kathakali, then two nights on the Kovalam cliffs. Good for a long weekend.</p>
+          <div class="price-tag">from &#8377;11,000 pp</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:24px"><a class="btn btn-outline" href="/itineraries/index.html">See all itineraries &#8594;</a></div>
+  </div>
+</section>
 
-<p class="note">
-or email at 
-<a href="mailto:tanmaykataria12@gmail.com">
-tanmaykataria12@gmail.com
-</a>
-</p>
+<section style="background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="kicker">Sample output</span>
+      <h2>What the planner gives you back</h2>
+    </div>
+    <div class="card" style="max-width:820px;margin:0 auto;padding:28px">
+      <span class="badge">Example</span>
+      <h3 style="margin-top:12px">5 days, 2 travelers, Comfort style, Alleppey + Munnar, October</h3>
+      <div class="grid grid-2" style="margin-top:16px">
+        <div>
+          <div class="result-day"><h4>Day 1-2, Munnar</h4><ul><li>Tea estate walk and Top Station sunset</li><li>Spice garden visit with a local guide</li></ul></div>
+          <div class="result-day"><h4>Day 3-5, Alleppey</h4><ul><li>Overnight houseboat cruise</li><li>Village walk and toddy-shop lunch</li></ul></div>
+        </div>
+        <table class="cost-table">
+          <thead><tr><th>Item</th><th>Amount</th></tr></thead>
+          <tbody>
+            <tr><td>Stay</td><td>&#8377;12,375</td></tr>
+            <tr><td>Food</td><td>&#8377;6,875</td></tr>
+            <tr><td>Local travel</td><td>&#8377;4,125</td></tr>
+            <tr><td>Activities</td><td>&#8377;4,125</td></tr>
+            <tr><td>Add-ons (houseboat, cab)</td><td>&#8377;10,800</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grand-total" style="margin-top:14px"><span>Grand total</span><span class="amt">&#8377;38,300</span></div>
+      <p class="per-day-note">&#8377;3,830 per person, per day &middot; this is a sample, run the planner for your own dates</p>
+    </div>
+  </div>
+</section>
 
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Where to go</span>
+      <h2>Four regions that cover most of what Kerala does well</h2>
+    </div>
+    <div class="grid grid-4 dest-grid">
+      <a href="/destinations/munnar.html" style="text-decoration:none;color:inherit"><img src="https://images.unsplash.com/photo-1650884986695-d1e5cf90610f?w=1600&q=80&auto=format&fit=crop" alt="Munnar tea gardens" loading="lazy"><div class="dest-name">Munnar</div></a>
+      <a href="/destinations/index.html" style="text-decoration:none;color:inherit"><img src="https://images.unsplash.com/photo-1563279036-8ae92c62ca4f?w=1600&q=80&auto=format&fit=crop" alt="Alleppey backwaters houseboat" loading="lazy"><div class="dest-name">Alleppey</div></a>
+      <a href="/destinations/index.html" style="text-decoration:none;color:inherit"><img src="https://images.unsplash.com/photo-1704287195405-6883b8f70487?w=1600&q=80&auto=format&fit=crop" alt="Fort Kochi coastline" loading="lazy"><div class="dest-name">Kochi</div></a>
+      <a href="/destinations/index.html" style="text-decoration:none;color:inherit"><img src="https://images.unsplash.com/photo-1709105134096-7f0ebf30a3b5?w=1600&q=80&auto=format&fit=crop" alt="Wayanad hills" loading="lazy"><div class="dest-name">Wayanad</div></a>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works" style="background:var(--white);border-top:1px solid var(--border)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">How it works</span>
+      <h2>Three steps, no account needed</h2>
+    </div>
+    <div style="max-width:640px">
+      <div class="step"><div class="step-num">1</div><div><h3>Set your basics</h3><p style="color:var(--ink-soft)">Destinations, days, travelers, and a travel style. Takes about 20 seconds.</p></div></div>
+      <div class="step"><div class="step-num">2</div><div><h3>Get a day-by-day plan</h3><p style="color:var(--ink-soft)">Days split across your chosen places with a short activity list for each, plus a full cost table.</p></div></div>
+      <div class="step"><div class="step-num">3</div><div><h3>Copy, download, or share it</h3><p style="color:var(--ink-soft)">Send it to your travel group on WhatsApp, save it as a text file, or use it as a checklist while you book.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Questions</span>
+      <h2>Frequently asked</h2>
+    </div>
+    <div style="max-width:760px"><div class="faq-item"><button class="faq-q">Is the Trip Budget Planner actually free?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></button><div class="faq-a"><p>Yes. There is no signup, no email gate, and no cap on how many plans you build. We keep it free because some visitors book through our partner links, and that covers the cost of running the site.</p></div></div><div class="faq-item"><button class="faq-q">How accurate are the numbers?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></button><div class="faq-a"><p>The base rates (Budget &#8377;2,500, Comfort &#8377;5,500, Luxury &#8377;12,000 per person per day) are built from listed prices on hotel and houseboat booking sites, checked every few months. Your actual trip can run 10-20% higher or lower depending on which hotels you pick and how far in advance you book.</p></div></div><div class="faq-item"><button class="faq-q">Why does December cost more than June?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></button><div class="faq-a"><p>December and January are Kerala's peak season: houseboats and beach-facing rooms in Alappuzha, Kumarakom, and Varkala routinely sell out weeks ahead, and prices follow demand. We apply a 1.25x multiplier for those two months. June to August is the monsoon, with fewer visitors and around 15% lower prices, though some houseboat routes reduce sailings in heavy rain.</p></div></div><div class="faq-item"><button class="faq-q">Do I need to book everything before I arrive?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></button><div class="faq-a"><p>For December, January, and the Onam period (usually late August or early September), yes, especially houseboats and Munnar hotels. For the rest of the year you can book your first two nights and figure out the rest as you go, which is how most independent travelers in Kerala actually move.</p></div></div><div class="faq-item"><button class="faq-q">Does Keralam Travels book my trip for us?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></button><div class="faq-a"><p>No. We are a planning tool, not a travel agency. The planner gives you a realistic budget and a day-by-day shape; you book directly with hotels, houseboat operators, or a local agent of your choice. The booking links under each plan go to third-party sites.</p></div></div><div class="faq-item"><button class="faq-q">Why don't you show hotel names in the results?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></button><div class="faq-a"><p>Because the planner is a budget estimator, not a booking engine, and hotel prices change by the week. Showing named hotels with stale prices would be less honest than showing you the category-level math and pointing you to a live search.</p></div></div></div>
+  </div>
+</section>
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">Keralam Travels</div>
+        <p style="margin-top:10px;color:#a9c1b8;max-width:34ch">A small, India-based team that plans Kerala trips around real per-day costs, not brochure math. Based in Kochi.</p>
+      </div>
+      <div><h5>Plan</h5><ul>
+        <li><a href="/planner.html">Trip Budget Planner</a></li>
+        <li><a href="/itineraries/index.html">Popular itineraries</a></li>
+        <li><a href="/destinations/index.html">Destinations</a></li>
+        <li><a href="/blog/index.html">Blog</a></li>
+      </ul></div>
+      <div><h5>Company</h5><ul>
+        <li><a href="/about.html">About us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy policy</a></li>
+        <li><a href="/disclaimer.html">Disclaimer</a></li>
+      </ul></div>
+      <div><h5>Reach us</h5><ul>
+        <li><a href="mailto:hello@keralamtravels.in">hello@keralamtravels.in</a></li>
+        <li><a href="https://wa.me/919400000000" target="_blank" rel="noopener">WhatsApp: +91 94000 00000</a></li>
+        <li>Kochi, Kerala, India</li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Keralam Travels. All costs are estimates, not quotes.</span>
+      <span><a href="/privacy.html">Privacy</a> &middot; <a href="/disclaimer.html">Disclaimer</a></span>
+    </div>
+  </div>
+</footer>
+<div class="sticky-cta">
+  <div class="info"><strong>Plan your Kerala budget</strong>Free planner &middot; no signup</div>
+  <a class="btn btn-amber btn-sm" href="/planner.html">Build my plan</a>
 </div>
-
-</body>
-
-</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lucide-static/0.469.0/umd/lucide.min.js"></script><script src="/js/main.js"></script><script src="/js/planner.js"></script></body></html>
