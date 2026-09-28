@@ -12,4 +12,13 @@
   <url><loc>https://keralamtravels.in/contact.html</loc><priority>0.5</priority></url>
   <url><loc>https://keralamtravels.in/privacy.html</loc><priority>0.3</priority></url>
   <url><loc>https://keralamtravels.in/disclaimer.html</loc><priority>0.3</priority></url>
+  <url><loc>https://keralamtravels.in/404.html</loc><priority>0.1</priority></url>
+  <url><loc>https://keralamtravels.in/itineraries/wayanad-trek-4-day.html</loc><priority>0.7</priority></url>
+  <url><loc>https://keralamtravels.in/itineraries/kochi-kovalam-4-day.html</loc><priority>0.7</priority></url>
+  <url><loc>https://keralamtravels.in/itineraries/kumarakom-backwaters-3-day.html</loc><priority>0.7</priority></url>
+  <url><loc>https://keralamtravels.in/destinations/alleppey.html</loc><priority>0.7</priority></url>
+  <url><loc>https://keralamtravels.in/destinations/kochi.html</loc><priority>0.7</priority></url>
+  <url><loc>https://keralamtravels.in/destinations/wayanad.html</loc><priority>0.7</priority></url>
+  <url><loc>https://keralamtravels.in/blog/houseboat-vs-hotel-alleppey.html</loc><priority>0.6</priority></url>
+  <url><loc>https://keralamtravels.in/blog/munnar-packing-list.html</loc><priority>0.6</priority></url>
 </urlset>
