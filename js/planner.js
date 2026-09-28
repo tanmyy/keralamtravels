@@ -1,7 +1,7 @@
 // Keralam Travels - Trip Budget Planner
 // 100% client-side. No network calls, no external pricing API.
 (function () {
-  var STYLE_BASE = { budget: 2500, comfort: 5500, luxury: 12000 };
+  var STYLE_BASE = { budget: 2000, comfort: 4400, luxury: 9600 };
   var STYLE_LABEL = { budget: 'Budget', comfort: 'Comfort', luxury: 'Luxury' };
 
   var DEST_META = {
