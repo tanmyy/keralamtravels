@@ -2,16 +2,23 @@
   <rect width="64" height="64" rx="14" fill="#0C5B4C"/>
   <ellipse cx="32" cy="55" rx="17" ry="4.5" fill="#7CB342"/>
   <g fill="#2E7D32">
-    <path d="M32 33C26 26 18 23 10 24c7 4 15 7 22 9z"/>
-    <path d="M32 33c6-7 14-10 22-9-7 4-15 7-22 9z"/>
-    <path d="M32 33C29 24 29 16 32 8c3 8 3 16 0 25z"/>
+    <path d="M32 33C29 24 29 15 32 6c3 9 3 18 0 27z" transform="rotate(-75 32 33)"/>
+    <path d="M32 33C29 24 29 15 32 6c3 9 3 18 0 27z" transform="rotate(-50 32 33)"/>
+    <path d="M32 33C29 24 29 15 32 6c3 9 3 18 0 27z" transform="rotate(-25 32 33)"/>
+    <path d="M32 33C29 24 29 15 32 6c3 9 3 18 0 27z"/>
+    <path d="M32 33C29 24 29 15 32 6c3 9 3 18 0 27z" transform="rotate(25 32 33)"/>
+    <path d="M32 33C29 24 29 15 32 6c3 9 3 18 0 27z" transform="rotate(50 32 33)"/>
+    <path d="M32 33C29 24 29 15 32 6c3 9 3 18 0 27z" transform="rotate(75 32 33)"/>
   </g>
   <path d="M28.5 53C29.5 45 30 39 31 33h4c-1 6-1.5 12-.5 20z" fill="#A0683C"/>
   <path d="M29 48q3 2 6 0M29.5 43q2.5 2 5 0M30 38q2 1.5 4 0" stroke="#7A4E2B" stroke-width="1.2" fill="none" stroke-linecap="round"/>
   <g fill="#43A047">
-    <path d="M32 33C27 27 21 25 15 26c6 3 12 5 17 7z"/>
-    <path d="M32 33c5-6 11-8 17-7-6 3-12 5-17 7z"/>
-    <path d="M32 33c-2-8-1-16 2-23 1 8 0 16-2 23z"/>
+    <path d="M32 33C29.5 25 29.5 16 32 8c2.5 8 2.5 17 0 25z" transform="rotate(-62 32 33)"/>
+    <path d="M32 33C29.5 25 29.5 16 32 8c2.5 8 2.5 17 0 25z" transform="rotate(-37 32 33)"/>
+    <path d="M32 33C29.5 25 29.5 16 32 8c2.5 8 2.5 17 0 25z" transform="rotate(-12 32 33)"/>
+    <path d="M32 33C29.5 25 29.5 16 32 8c2.5 8 2.5 17 0 25z" transform="rotate(12 32 33)"/>
+    <path d="M32 33C29.5 25 29.5 16 32 8c2.5 8 2.5 17 0 25z" transform="rotate(37 32 33)"/>
+    <path d="M32 33C29.5 25 29.5 16 32 8c2.5 8 2.5 17 0 25z" transform="rotate(62 32 33)"/>
   </g>
   <g fill="#E8641E" stroke="#B84A12" stroke-width="1">
     <circle cx="26" cy="31" r="3"/>
