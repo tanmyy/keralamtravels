@@ -5,7 +5,7 @@
   var STYLE_LABEL = { budget: 'Budget', comfort: 'Comfort', luxury: 'Luxury' };
 
   var DEST_META = {
-    munnar:    { label: 'Munnar',           activities: ['Walk through a working tea estate and watch the plucking round', 'Sunset stop at Top Station or Echo Point', 'Short spice-garden walk with a local guide', 'Optional early trek toward Kolukkumalai for sunrise'] },
+    munnar:    { label: 'Munnar',           activities: ['Walk through a working tea estate and watch tea pluckers at work', 'Sunset stop at Top Station or Echo Point', 'Short spice-garden walk with a local guide', 'Optional early trek toward Kolukkumalai for sunrise'] },
     alleppey:  { label: 'Alleppey (Backwaters)', activities: ['Overnight or day cruise on a converted houseboat', 'Village walk along the canal bunds', 'Toddy-shop lunch with fresh fish curry', 'Canoe ride through the narrow backwater channels'] },
     kochi:     { label: 'Kochi',            activities: ['Fort Kochi walking loop past the Chinese fishing nets', 'Evening Kathakali or Kalaripayattu show', 'Mattancherry Palace and the Jew Town spice lanes', 'Sunset at Marine Drive'] },
     kumarakom: { label: 'Kumarakom',         activities: ['Bird sanctuary walk at dawn', 'Backwater houseboat cruise on Vembanad Lake', 'Ayurvedic massage session at a lakeside resort', 'Village cycling tour'] },
@@ -23,7 +23,7 @@
   }
   function seasonLabel(month) {
     var mult = seasonMultiplier(month);
-    if (mult > 1) return 'Peak season (Dec-Jan): +25% on stays';
+    if (mult > 1) return 'Peak season (Dec-Jan): +25% on the full daily base';
     if (mult < 1) return 'Monsoon season (Jun-Aug): -15%, fewer crowds, some houseboat routes limited';
     return 'Regular season: standard pricing';
   }
