@@ -147,6 +147,7 @@ select{
 .style-card{border:1.5px solid var(--border);border-radius:12px;padding:14px;cursor:pointer;background:var(--sand)}
 .style-card.active{border-color:var(--amber);background:#fff6e9;box-shadow:0 0 0 2px var(--amber) inset}
 .style-card .price{color:var(--amber-dark);font-weight:800;font-size:1.05rem}
+.style-card .price .pp{font-weight:600;font-size:.75rem;color:#6b6257}
 .style-card h4{margin:2px 0 4px;font-family:'Plus Jakarta Sans';font-size:1rem;font-weight:800}
 .style-card p{font-size:.82rem;color:var(--ink-soft);margin:0}
 .addon-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}
