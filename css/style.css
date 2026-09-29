@@ -108,7 +108,8 @@ header.site{
 .trust span{display:flex;align-items:center;gap:8px}
 
 /* Cards */
-.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);color:var(--ink)}
+.card h1,.card h2,.card h3,.card p,.card li,.card td,.card th,.card label{color:var(--ink)}
 .card-pad{padding:22px}
 
 /* Grids */
