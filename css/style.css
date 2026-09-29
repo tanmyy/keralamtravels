@@ -232,3 +232,21 @@ body{padding-bottom:76px}
 .divider{height:1px;background:var(--border);margin:40px 0}
 .breadcrumb{font-size:.82rem;color:var(--ink-soft);margin-bottom:16px}
 .breadcrumb a{color:var(--teal);text-decoration:none}
+
+/* Trip quiz */
+.quiz-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+@media(max-width:600px){.quiz-opts{grid-template-columns:1fr}}
+.quiz-opt{text-align:left;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px 16px;cursor:pointer;font:inherit;color:var(--ink)}
+.quiz-opt:hover{border-color:var(--amber)}
+.quiz-opt strong{display:block;color:var(--ink);font-size:.98rem}
+.quiz-opt small{display:block;color:var(--ink-soft);font-size:.82rem;margin-top:2px}
+.quiz-meta{display:flex;justify-content:space-between;align-items:center;color:var(--ink-soft);font-size:.85rem;margin-bottom:6px}
+.quiz-back{background:none;border:none;color:var(--ink-soft);cursor:pointer;font:inherit;text-decoration:underline;padding:0}
+
+/* Day-wise itinerary accordions */
+.day-plan .faq-item{border:1px solid var(--border);border-radius:12px;margin-bottom:10px;padding:0 16px;background:var(--white)}
+.day-plan .faq-q{font-family:'Plus Jakarta Sans';font-weight:800}
+.faq-a ul{margin:0 0 12px;padding-left:20px;color:var(--ink)}
+.faq-a li{margin-bottom:6px}
+.day-tip{background:#f4faf7;border:1px solid var(--border);border-radius:10px;padding:10px 14px;font-size:.88rem;color:var(--ink-soft);margin:0 0 16px}
+.day-tip strong{color:var(--ink)}
