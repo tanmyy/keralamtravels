@@ -185,6 +185,7 @@ select{
 
 .dest-grid img{height:220px;width:100%;object-fit:cover;border-radius:var(--radius)}
 .dest-name{margin-top:10px;font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem}
+.dest-count{margin-top:2px;font-size:.85rem;color:var(--ink-soft)}
 
 /* Steps */
 .steps{counter-reset:step}
