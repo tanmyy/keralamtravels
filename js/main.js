@@ -31,4 +31,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Lucide icons
   if (window.lucide) { window.lucide.createIcons(); }
+
+  // Itinerary pages: open the first day by default
+  document.querySelectorAll('.day-plan').forEach(function (plan) {
+    var first = plan.querySelector('.faq-item');
+    if (first && !first.classList.contains('open')) {
+      first.classList.add('open');
+      var a = first.querySelector('.faq-a');
+      if (a) a.style.maxHeight = a.scrollHeight + 'px';
+    }
+  });
 });
