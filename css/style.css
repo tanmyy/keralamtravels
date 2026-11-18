@@ -251,3 +251,10 @@ body{padding-bottom:76px}
 .faq-a li{margin-bottom:6px}
 .day-tip{background:#f4faf7;border:1px solid var(--border);border-radius:10px;padding:10px 14px;font-size:.88rem;color:var(--ink-soft);margin:0 0 16px}
 .day-tip strong{color:var(--ink)}
+
+.ck{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:#FFFDF7;border:1px solid #DDD5BF;border-radius:12px;padding:14px 16px;box-shadow:0 8px 30px rgba(0,0,0,.18);display:none}
+.ck.show{display:block}.ck p{margin:0 0 10px;font-size:.92rem;color:#1C2B26}
+.ck-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.ck-row a{font-size:.85rem;color:#0C5B4C}
+.ck .btn-decline{background:#fff!important;color:#0C5B4C!important;border:2px solid #0C5B4C!important}
+@media(min-width:700px){.ck{left:auto;right:18px;bottom:18px;max-width:380px}}
